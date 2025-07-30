@@ -1,0 +1,12 @@
+
+<!doctype html>
+<html>
+<head><title>Results</title></head>
+<body>
+  <h2>OMR Result Summary</h2>
+  {% for r in results %}
+    <p><b>{{ r.name }}</b> | Score: {{ r.score }} | Rank: {{ r.rank }} | Wrong: {{ r.wrong }}</p>
+  {% endfor %}
+  <a href="/download-pdf">Download PDF</a>
+</body>
+</html>
